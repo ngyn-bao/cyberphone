@@ -1,0 +1,9 @@
+@mixin styleButton($bg-color, $text-color, $shadow: none) {
+  padding: 20px 45px;
+  background-color: $bg-color;
+  color: $text-color;
+  box-shadow: $shadow;
+  border-radius: 8px;
+  border: none;
+  transition: all 0.4s;
+}

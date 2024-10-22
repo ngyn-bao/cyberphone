@@ -1,0 +1,63 @@
+.banner {
+  padding: 50px 0;
+  background-image: url("../img/product-header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .content {
+      width: 50%;
+      h1 {
+        font-size: 50px;
+        color: $color-main;
+      }
+
+      h3 {
+        margin: 15px 0;
+        color: #000;
+      }
+
+      p {
+        font-size: $text-xl;
+      }
+
+      .action {
+        display: flex;
+        margin-top: 15px;
+        .btn1 {
+          @include styleButton($color-base, $color-main, $shadow);
+          margin-right: 20px;
+          span {
+            margin-left: 5px;
+          }
+          &:hover {
+            background-color: $color-main;
+            color: $color-base;
+          }
+        }
+
+        .btn2 {
+          @include styleButton($color-main, $color-base, $shadow-btn);
+          span {
+            margin-left: 5px;
+          }
+          &:hover {
+            background-color: $color-base;
+            color: $color-main;
+          }
+        }
+      }
+    }
+
+    .product-img {
+      width: 50%;
+      img {
+        width: 120%;
+      }
+    }
+  }
+}
